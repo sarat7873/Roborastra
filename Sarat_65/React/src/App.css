@@ -1,42 +1,135 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  background-color: #f0f4f8;
+  color: #333;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* App container */
+.app {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2563eb;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
 }
 
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #c7d2fe;
+}
+
+/* Theme toggle button */
+.theme-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #fcd34d;
+  font-weight: bold;
+}
+
+.theme-btn:hover {
+  background-color: #fbbf24;
+}
+
+/* Cards for components */
 .card {
-  padding: 2em;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
 }
 
-.read-the-docs {
-  color: #888;
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Buttons */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  margin: 5px;
+  background-color: #3b82f6;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Counter */
+.counter h2 {
+  margin-bottom: 12px;
+}
+
+/* User list */
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+}
+
+/* Dark Mode */
+.dark {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.dark .card {
+  background-color: #1e293b;
+}
+
+.dark nav {
+  background-color: #1e293b;
+}
+
+.dark button.theme-btn {
+  background-color: #fbbf24;
+  color: #1e293b;
 }
