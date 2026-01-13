@@ -1,5 +1,5 @@
 function App() {
-  const user = "Sarat";
+  const user = "Sarat Swain";
 
   return <Parent user={user} />;
 }
