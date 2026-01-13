@@ -1,4 +1,4 @@
-/* Reset & Fonts */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +11,14 @@ body {
   color: #333;
 }
 
-/* App container */
+
 .app {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
 }
 
-/* Navbar */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -41,7 +41,7 @@ nav a:hover {
   color: #c7d2fe;
 }
 
-/* Theme toggle button */
+
 .theme-btn {
   padding: 6px 12px;
   border: none;
@@ -55,7 +55,7 @@ nav a:hover {
   background-color: #fbbf24;
 }
 
-/* Cards for components */
+
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -69,7 +69,6 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
-/* Buttons */
 button {
   padding: 8px 16px;
   border: none;
@@ -86,12 +85,10 @@ button:hover {
   background-color: #1d4ed8;
 }
 
-/* Counter */
 .counter h2 {
   margin-bottom: 12px;
 }
 
-/* User list */
 ul {
   list-style: none;
 }
@@ -101,7 +98,7 @@ li {
   border-bottom: 1px solid #e2e8f0;
 }
 
-/* Form */
+
 form {
   display: flex;
   flex-direction: column;
@@ -115,7 +112,7 @@ input {
   font-size: 16px;
 }
 
-/* Dark Mode */
+
 .dark {
   background-color: #0f172a;
   color: #e2e8f0;
