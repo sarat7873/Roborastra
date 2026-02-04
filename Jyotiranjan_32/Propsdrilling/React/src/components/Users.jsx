@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Users() {
+export default function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -11,11 +11,9 @@ function Users() {
 
   return (
     <ul>
-      {users.map(user => (
-        <li key={user.id}>{user.name}</li>
+      {users.map(u => (
+        <li key={u.id}>{u.name}</li>
       ))}
     </ul>
   );
 }
-
-export default Users;
