@@ -1,16 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function Counter() {
-  const [count, setCount] = useState(0);
+export default function Counter({ start }) {
+  const [count, setCount] = useState(start);
+
+  useEffect(() => {
+    document.title = `Count ${count}`;
+  }, [count]);
 
   return (
-    <div className="counter">
-      <h2>{count}</h2>
-      <button onClick={() => setCount(count + 1)}>+</button>
-      <button onClick={() => setCount(count - 1)}>-</button>
-      <button onClick={() => setCount(0)}>Reset</button>
-    </div>
+    <button onClick={() => setCount(c => c + 1)}>
+      Count: {count}
+    </button>
   );
 }
-
-export default Counter;
